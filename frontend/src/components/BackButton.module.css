@@ -1,0 +1,171 @@
+.backButton {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  
+  padding: 12px 20px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  
+  /* إزالة الأنماط الافتراضية للزر */
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+.backButton:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateX(-3px);
+  box-shadow: 
+    0 6px 25px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+}
+
+.backButton:active {
+  transform: translateX(-1px);
+  transition: transform 0.1s;
+}
+
+.arrow {
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease;
+}
+
+.backButton:hover .arrow {
+  transform: translateX(-2px);
+}
+
+.label {
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+
+/* Variants */
+.backButton.small {
+  padding: 8px 16px;
+  font-size: 0.875rem;
+}
+
+.backButton.small .arrow {
+  font-size: 1.1rem;
+}
+
+.backButton.large {
+  padding: 15px 25px;
+  font-size: 1.125rem;
+}
+
+.backButton.large .arrow {
+  font-size: 1.5rem;
+}
+
+.backButton.iconOnly {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+.backButton.iconOnly .label {
+  display: none;
+}
+
+.backButton.iconOnly .arrow {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Colors */
+.backButton.primary {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.9), rgba(6, 182, 212, 0.9));
+  border: none;
+}
+
+.backButton.primary:hover {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 1), rgba(6, 182, 212, 1));
+}
+
+.backButton.secondary {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.backButton.dark {
+  background: rgba(15, 23, 42, 0.95);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .backButton {
+    top: 20px;
+    left: 20px;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+  
+  .backButton.small {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+  
+  .backButton.large {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+  
+  .backButton.iconOnly {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  .backButton {
+    top: 15px;
+    left: 15px;
+    padding: 8px 14px;
+  }
+  
+  .backButton .label {
+    font-size: 0.875rem;
+  }
+  
+  /* إخفاء النص على الشاشات الصغيرة جداً */
+  .backButton.hideTextOnMobile .label {
+    display: none;
+  }
+  
+  .backButton.hideTextOnMobile {
+    padding: 10px;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+  }
+}
+
+
