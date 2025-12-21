@@ -104,11 +104,11 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
   }, [autoStartTimer]);
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const getModeDescription = () => {
-    return mode === 'learning' 
-      ? 'Structured language learning with AI guidance and personalized lessons'
-      : 'Natural conversation practice with cultural insights and real-time feedback';
-  };
+  // const getModeDescription = () => {
+  //   return mode === 'learning' 
+  //     ? 'Structured language learning with AI guidance and personalized lessons'
+  //     : 'Natural conversation practice with cultural insights and real-time feedback';
+  // };
 
   return (
     <div className={styles.container}>
