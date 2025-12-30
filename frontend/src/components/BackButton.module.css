@@ -22,7 +22,6 @@
   z-index: 1000;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   
-  /* إزالة الأنماط الافتراضية للزر */
   border: none;
   outline: none;
   font-family: inherit;
@@ -154,7 +153,6 @@
     font-size: 0.875rem;
   }
   
-  /* إخفاء النص على الشاشات الصغيرة جداً */
   .backButton.hideTextOnMobile .label {
     display: none;
   }

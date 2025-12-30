@@ -2,7 +2,7 @@ import { useState } from 'react';
 import ModeSelector from './components/ModeSelector';
 import LanguageSelector from './components/LanguageSelector';
 import Chat from './components/Chat';
-import BackButton from './components/BackButton'; // استيراد الكومبوننت
+import BackButton from './components/BackButton'; 
 import './App.css';
 
 function App() {
@@ -29,7 +29,6 @@ function App() {
 
   return (
     <div className="app">
-            {/* زر العودة - يظهر فقط إذا لم نكن في الصفحة الأولى */}
       {step !== 'mode' && (
         <BackButton 
           onClick={handleBack}

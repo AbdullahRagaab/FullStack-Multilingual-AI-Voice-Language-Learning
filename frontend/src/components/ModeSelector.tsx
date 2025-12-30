@@ -1,31 +1,3 @@
-// import React from 'react';
-
-// interface ModeSelectorProps {
-//   onSelectMode: (mode: 'learning' | 'assistant') => void;
-// }
-
-// const ModeSelector: React.FC<ModeSelectorProps> = ({ onSelectMode }) => {
-//   return (
-//     <div className="mode-selector">
-//       <h2>Select Mode</h2>
-//       <button onClick={() => onSelectMode('learning')}>Learning Mode</button>
-//       <button onClick={() => onSelectMode('assistant')}>Assistant Mode</button>
-//     </div>
-//   );
-// };
-
-// export default ModeSelector;
-
-
-
-
-
-
-
-
-
-
-
 import React from 'react';
 import styles from './ModeSelector.module.css';
 
@@ -36,19 +8,15 @@ interface ModeSelectorProps {
 const ModeSelector: React.FC<ModeSelectorProps> = ({ onSelectMode }) => {
   return (
     <div className={styles.container}>
-      {/* العنوان الرئيسي */}
       <h1 className={styles.title}>
-        PolyVoice AI
+        Multilingual AI
       </h1>
       
-      {/* العنوان الفرعي */}
       <p className={styles.subtitle}>
         Choose your AI learning experience. Master languages through intelligent conversation and personalized guidance.
       </p>
       
-      {/* أزرار الاختيار */}
       <div className={styles.buttonsContainer}>
-        {/* زر Learning Mode */}
         <button
           onClick={() => onSelectMode('learning')}
           className={`${styles.button} ${styles.learningButton}`}
@@ -67,7 +35,6 @@ const ModeSelector: React.FC<ModeSelectorProps> = ({ onSelectMode }) => {
           <span className={styles.arrow}>→</span>
         </button>
         
-        {/* زر Assistant Mode */}
         <button
           onClick={() => onSelectMode('assistant')}
           className={`${styles.button} ${styles.assistantButton}`}
@@ -87,7 +54,6 @@ const ModeSelector: React.FC<ModeSelectorProps> = ({ onSelectMode }) => {
         </button>
       </div>
       
-      {/* المميزات */}
       <div className={styles.features}>
         <div className={styles.feature}>
           <span className={styles.featureIcon}>🗣️</span>
@@ -107,7 +73,6 @@ const ModeSelector: React.FC<ModeSelectorProps> = ({ onSelectMode }) => {
         </div>
       </div>
       
-      {/* التذييل */}
       <div className={styles.footer}>
         <p>Switch modes anytime • Your conversations are saved automatically</p>
       </div>

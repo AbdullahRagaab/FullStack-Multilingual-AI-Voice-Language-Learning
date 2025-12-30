@@ -9,7 +9,6 @@ interface BackButtonProps {
 
 const BackButton: React.FC<BackButtonProps> = ({ 
   onClick, 
-//   label = 'Back',
   className = '' 
 }) => {
   return (

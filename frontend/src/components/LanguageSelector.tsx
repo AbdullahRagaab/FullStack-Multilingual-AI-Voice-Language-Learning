@@ -1,74 +1,20 @@
-// import React, { useState } from 'react';
-
-// interface LanguageSelectorProps {
-//   mode: 'learning' | 'assistant';
-//   onSelectLanguage: (language: string) => void;
-// }
-
-// const LanguageSelector: React.FC<LanguageSelectorProps> = ({ mode, onSelectLanguage }) => {
-//   const [customLanguage, setCustomLanguage] = useState('');
-
-//   const languages = ['Arabic', 'English', 'German', 'Italian', 'Spanish'];
-
-//   return (
-//     <div className="language-selector">
-//       <h2>Select Language</h2>
-//       {mode === 'assistant' ? (
-//         <div>
-//           {languages.map(lang => (
-//             <button key={lang} onClick={() => onSelectLanguage(lang)}>{lang}</button>
-//           ))}
-//         </div>
-//       ) : (
-//         <div>
-//           <input
-//             type="text"
-//             placeholder="Enter target language"
-//             value={customLanguage}
-//             onChange={(e) => setCustomLanguage(e.target.value)}
-//           />
-//           <button onClick={() => onSelectLanguage(customLanguage)}>Start</button>
-//         </div>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default LanguageSelector;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React, { useState, useEffect } from 'react';
 import styles from './LanguageSelector.module.css';
-// import BackButton from './BackButton';
 
 
 interface LanguageSelectorProps {
   mode: 'learning' | 'assistant';
   onSelectLanguage: (language: string) => void;
-  onBack?: () => void; // دالة للعودة للخلف
+  onBack?: () => void;
 }
 
 const LanguageSelector: React.FC<LanguageSelectorProps> = ({ 
   mode, 
   onSelectLanguage, 
-  // onBack 
 }) => {
   const [selectedLanguage, setSelectedLanguage] = useState<string>('');
   const [autoStartTimer, setAutoStartTimer] = useState<ReturnType<typeof setTimeout> | null>(null);
 
-  // اللغات المحددة فقط
   const languages = [
     { name: 'Arabic', code: 'ar', flag: '🇸🇦' },
     { name: 'English', code: 'en', flag: '🇺🇸' },
@@ -77,24 +23,20 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
     { name: 'Spanish', code: 'es', flag: '🇪🇸' },
   ];
 
-  // عند اختيار لغة، ابدأ المحادثة تلقائياً بعد 1 ثانية
   const handleLanguageSelect = (language: string) => {
     setSelectedLanguage(language);
     
-    // إلغاء أي timer سابق
     if (autoStartTimer) {
       clearTimeout(autoStartTimer);
     }
     
-    // بدء timer جديد للبدء التلقائي
     const timer = setTimeout(() => {
       onSelectLanguage(language);
-    }, 1000); // 1 ثانية تأخير
+    }, 1000); 
     
     setAutoStartTimer(timer);
   };
 
-  // تنظيف timer عند فك تركيب المكون
   useEffect(() => {
     return () => {
       if (autoStartTimer) {
@@ -103,29 +45,9 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
     };
   }, [autoStartTimer]);
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  // const getModeDescription = () => {
-  //   return mode === 'learning' 
-  //     ? 'Structured language learning with AI guidance and personalized lessons'
-  //     : 'Natural conversation practice with cultural insights and real-time feedback';
-  // };
-
   return (
     <div className={styles.container}>
-    {/* زر العودة الداخلي (اختياري)
-    {onBack && (
-      <BackButton 
-        onClick={() => {
-          // إلغاء timer إذا كان موجوداً
-          if (autoStartTimer) {
-            clearTimeout(autoStartTimer);
-          }
-          onBack();
-        }}
-        // label="Back"
-        className="secondary small"
-      />
-    )} */}
+
 
       <div className={styles.content}>
         {/* Mode Indicator */}
@@ -186,7 +108,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
             <span>Quick Start Guide</span>
           </div>
           <p className={styles.modeDescriptionText}>
-            Just click on any language above to begin. No need for extra buttons!
+            Just click on any language above to begin.
             {selectedLanguage && (
               <><br /><strong>Selected: {selectedLanguage}</strong> - Starting automatically...</>
             )}

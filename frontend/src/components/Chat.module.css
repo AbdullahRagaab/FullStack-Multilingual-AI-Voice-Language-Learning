@@ -3,7 +3,7 @@
   flex-direction: column;
   height: 100vh;
   width: 100vw;
-  background: #9bbbd6; /* background أنضف */
+  background: #9bbbd6; 
   font-family: 'Segoe UI', sans-serif;
 }
 
@@ -96,7 +96,7 @@
 
 /* Voice button */
 .voiceBtn {
-  background: #2c3e50; /* كحلي شيك */
+  background: #2c3e50; 
   border: none;
   color: white;
   width: 42px;

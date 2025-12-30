@@ -13,7 +13,6 @@
   overflow: hidden;
 }
 
-/* تأثيرات الخلفية */
 .container::before {
   content: '';
   position: absolute;

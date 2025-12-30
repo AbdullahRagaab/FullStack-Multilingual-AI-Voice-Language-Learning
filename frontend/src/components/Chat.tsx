@@ -20,7 +20,7 @@ interface Message {
 interface ChatProps {
   mode: 'learning' | 'assistant';
   language: string;
-  userId: string; // placeholder
+  userId: string; 
 }
 
 const Chat: React.FC<ChatProps> = ({ mode, language, userId }) => {
@@ -55,10 +55,9 @@ const sendMessage = async (message: string) => {
       mode,
       language,
       message,
-      conversationId, // ← هذا هو المفتاح!
+      conversationId, 
 
     });
-        // حفظ الـ conversationId إذا كان أول مرة
     if (!conversationId && response.data.conversationId) {
       setConversationId(response.data.conversationId);
       localStorage.setItem(`conversation_${userId}_${mode}_${language}`, response.data.conversationId);
@@ -112,32 +111,6 @@ const sendMessage = async (message: string) => {
   const handleSend = () => {
     sendMessage(input);
   };
-
-  // return (
-  //   <div className="chat">
-  //     <Toaster />
-  //     <div className="messages">
-  //       {messages.map((msg, index) => (
-  //         <div key={index} className={`message ${msg.role}`}>
-  //           <p>{msg.content}</p>
-  //         </div>
-  //       ))}
-  //     </div>
-  //     <div className="input-area">
-  //       <input
-  //         type="text"
-  //         value={input}
-  //         onChange={(e) => setInput(e.target.value)}
-  //         placeholder="Type or speak..."
-  //       />
-  //       <button onClick={handleSend}>Send</button>
-  //       <button onClick={startRecording} disabled={isRecording}>
-  //         {isRecording ? 'Recording...' : 'Voice'}
-  //       </button>
-  //     </div>
-  //   </div>
-  // );
-
 
 
   return (

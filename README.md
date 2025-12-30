@@ -71,9 +71,5 @@ A web application for practicing languages through voice conversations with an A
 
 ## Deployment
 
-- **Frontend**: Deploy to Vercel or Netlify.
-- **Backend**: Deploy to Render or Railway.
-
-## License
-
-ISC
+- **Frontend**: Deploy to Vercel .
+- **Backend**: Deploy to Render .
