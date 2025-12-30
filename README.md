@@ -76,7 +76,6 @@ Engage in natural, flowing conversations without interruption or corrections—p
 | 🇩🇪 German | ✅ | ✅ |
 | 🇮🇹 Italian | ✅ | ✅ |
 | 🇪🇸 Spanish | ✅ | ✅ |
-| 🌍 Custom | ✅ | ➖ |
 
 ---
 
@@ -154,49 +153,7 @@ cd ../frontend
 npm install
 ```
 
-### Step 3: Configure Environment Variables
-
-Create a `.env` file in the `backend` directory:
-
-```env
-# MongoDB Configuration
-MONGODB_URI=mongodb+srv://username:password@cluster0.xxxxx.mongodb.net/language_assistant?retryWrites=true&w=majority
-
-# JWT Security
-JWT_SECRET=your_super_secure_jwt_secret_key_here_minimum_32_characters
-
-# Hugging Face AI
-HUGGINGFACE_API_KEY=hf_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
-# Server Configuration
-PORT=5000
-NODE_ENV=development
-```
-
-#### 🔑 Getting Your API Keys
-
-**MongoDB Atlas:**
-1. Visit [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register)
-2. Create a free cluster (M0 tier)
-3. Go to **Database Access** → Create a database user
-4. Go to **Network Access** → Add IP Address → Allow access from anywhere (0.0.0.0/0)
-5. Click **Connect** → **Drivers** → Copy your connection string
-6. Replace `<password>` with your database user password
-
-**Hugging Face:**
-1. Visit [Hugging Face](https://huggingface.co/join)
-2. Sign up for a free account
-3. Go to [Settings → Access Tokens](https://huggingface.co/settings/tokens)
-4. Click **New token** → Name: `language-assistant` → Type: **Read**
-5. Copy the generated token (starts with `hf_`)
-
-**JWT Secret:**
-Generate a secure random string (32+ characters):
-```bash
-node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
-```
-
-### Step 4: Start the Application
+### Step 3: Start the Application
 
 #### Start Backend Server (Terminal 1)
 ```bash
@@ -340,36 +297,6 @@ ai-language-learning/
 └── README.md               # This file
 ```
 
----
-
-## 🤝 Contributing
-
-We welcome contributions from the community! Here's how you can help:
-
-### Ways to Contribute
-
-- 🐛 **Report bugs** by opening an issue
-- 💡 **Suggest features** or improvements
-- 📖 **Improve documentation**
-- 🔧 **Submit pull requests** with bug fixes or new features
-
-### Development Workflow
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'Add amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
-### Code Style Guidelines
-
-- Use **TypeScript** for type safety
-- Follow **ESLint** rules
-- Write meaningful commit messages
-- Add comments for complex logic
-- Test your changes before submitting
-
----
 
 ## 📄 License
 
@@ -388,18 +315,16 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 📞 Support & Contact
 
-- 📧 **Email**: support@example.com
-- 🐛 **Issues**: [GitHub Issues](https://github.com/yourusername/ai-language-learning/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/yourusername/ai-language-learning/discussions)
+- 📧 **Email**: abdullahragab460@gmail.com
+- 🐛 **Issues**: [GitHub Issues](https://github.com/AbdullahRagaab/FullStack-Multilingual-AI-Voice-Language-Learning/issues)
+- 💬 **Discussions**: [GitHub Discussions](https:/AbdullahRagaab/FullStack-Multilingual-AI-Voice-Language-Learning/discussions)
 
 ---
 
 <div align="center">
 
-**Made with ❤️ by [Your Name]**
+**Made with ❤️ by [Abdullah Ragab]**
 
 ⭐ Star this repo if you find it helpful!
-
-[Report Bug](https://github.com/yourusername/ai-language-learning/issues) • [Request Feature](https://github.com/yourusername/ai-language-learning/issues)
 
 </div>
