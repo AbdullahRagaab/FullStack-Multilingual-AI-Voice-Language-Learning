@@ -1,10 +1,23 @@
-# 🗣️ AI Voice Language Learning Partner
+# 🗣️ Multilingual AI Voice Language Learning Partner
 
 <div align="center">
 
 ![Language Learning](https://img.shields.io/badge/AI-Language%20Learning-blue?style=for-the-badge&logo=openai)
 ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) 
+[![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/) 
+[![React](https://img.shields.io/badge/React-18+-blue.svg)](https://reactjs.org/) 
+[![MongoDB](https://img.shields.io/badge/MongoDB-7+-green.svg)](https://www.mongodb.com/) 
+[![Vite](https://img.shields.io/badge/Vite-5+-pink.svg)](https://vitejs.dev/) 
+[![ESLint](https://img.shields.io/badge/ESLint-8+-yellow.svg)](https://eslint.org/) 
+[![React Hot Toast](https://img.shields.io/badge/React_Hot_Toast-2+-orange.svg)](https://react-hot-toast.com/) 
+[![Lucide React](https://img.shields.io/badge/Lucide_React-0.264+-purple.svg)](https://lucide.dev/) 
+[![Express.js](https://img.shields.io/badge/Express-4+-black.svg)](https://expressjs.com/) 
+[![Stream Chat](https://img.shields.io/badge/Stream_Chat-6+-cyan.svg)](https://getstream.io/chat/) 
+[![JWT](https://img.shields.io/badge/JWT-8+-orange.svg)](https://jwt.io/) 
+[![CORS](https://img.shields.io/badge/CORS-2+-blue.svg)](https://www.npmjs.com/package/cors) 
+[![cookie-parser](https://img.shields.io/badge/cookie_parser-1+-lightgreen.svg)](https://www.npmjs.com/package/cookie-parser) 
+[![dotenv](https://img.shields.io/badge/dotenv-16+-green.svg)](https://www.npmjs.com/package/dotenv)
 
 **An intelligent voice-powered web application for immersive language learning through real-time AI conversations**
 
