@@ -8,7 +8,7 @@
 
 **An intelligent voice-powered web application for immersive language learning through real-time AI conversations**
 
-[Features](#-features) • [Demo](#-[(https://abdullah-multilingual.vercel.app)]) • [Tech Stack](#-tech-stack) • [Installation](#-installation) • [Usage](#-usage) • [Deployment](#-deployment) • [Contributing](#-contributing)
+[Features](#-features) • [Demo](#-demo) • [Tech Stack](#-tech-stack) • [Installation](#-installation) • [Usage](#-usage) • [Deployment](#-deployment) • [Contributing](#-contributing)
 
 ---
 
