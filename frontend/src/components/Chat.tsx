@@ -50,7 +50,7 @@ const sendMessage = async (message: string) => {
   setInput('');
 
   try {
-    const response = await axios.post('http://localhost:5000/api/conversation/send', {
+    const response = await axios.post('https://fullstack-multilingual-ai-voice-language.onrender.com/api/conversation/send', {
       userId,
       mode,
       language,
