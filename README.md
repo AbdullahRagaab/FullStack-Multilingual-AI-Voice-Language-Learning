@@ -304,12 +304,16 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ---
 
-## 🙏 Acknowledgments
+##  Images
 
-- **Hugging Face** for providing free-tier AI inference API
-- **MongoDB Atlas** for cloud database hosting
-- **Web Speech API** community for documentation and examples
-- **React** and **Vite** teams for excellent developer tools
+<img width="1331" height="628" alt="Image" src="https://github.com/user-attachments/assets/bea0a5c3-391a-4e80-b7c5-8a1337a33c9f" />
+<img width="1343" height="629" alt="Image" src="https://github.com/user-attachments/assets/a38c31e0-b838-443e-b166-4f1f0f67781a" />
+<img width="1334" height="630" alt="Image" src="https://github.com/user-attachments/assets/6b91ebae-2fc0-4b82-99e9-c1457bb807b0" />
+<img width="1357" height="629" alt="Image" src="https://github.com/user-attachments/assets/74fa0fa2-6ea0-4e1c-980f-bcb1dbb83c76" />
+<img width="1358" height="633" alt="Image" src="https://github.com/user-attachments/assets/ec7e43f4-0769-4cb9-888c-f4630bd0c6b6" />
+<img width="1359" height="632" alt="Image" src="https://github.com/user-attachments/assets/8afaf0ea-8934-4ace-9e48-093161058b82" />
+<img width="1359" height="627" alt="Image" src="https://github.com/user-attachments/assets/d14c8b65-ee54-43ad-a756-e5a94efb1b38" />
+<img width="1354" height="632" alt="Image" src="https://github.com/user-attachments/assets/686ac594-b43c-41b4-bbec-a94786e7cc4d" />
 
 ---
 
